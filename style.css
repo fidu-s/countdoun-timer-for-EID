@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Parisienne&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --whiteColor: #ffffff
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Lobster", sans-serif;
+}
+
+body {
+    background-color: var(--whiteColor);
+    line-height: 1.428;
+    color: var(--whiteColor) ;
+    background: url(pexels-aqtai-2233416.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+}
+
+#container.parallax-container {
+    position: relative;
+    max-width: 2560px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: linear-gradient(120deg, rgba(160, 101, 177, 0.7), rgba(4, 131, 160, 0.7));
+}
+
+#container .eid-scene {
+    position: relative;
+}
+
+#container .eid-scene::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* .eid_scene.layer {
+    width: 100%;
+} */
+
+.eid-scene .layerphoto {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 12.85rem;
+}
+
+/* .eid-scene .l {
+    display: block;
+    left: 0;
+    top: 0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+} */
+
+.countdown-container {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    top: 0;
+    font-size: 3rem;
+    color: var(--whiteColor);
+    width: 100%;
+}
+
+.countdown-container .countdown-globe {
+    height: 20rem;
+    text-align: center;
+    padding-top: 5rem;
+    line-height: 1.3;
+    z-index: 2;
+    flex-basis: 25%;
+}
+
+.countdown-container .countdown-globe div {
+    font-size: 2rem;
+}
+
+#container .eid-mubarak-text {
+    font-family: "Parisienne", cursive;
+    position: absolute;
+    top: 15rem;
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+    color: var(--whiteColor);
+    z-index: 99;
+}
+
+@media(min-width: 565px) {
+    .countdown-container {
+        width: 60rem;
+        margin-left: -30rem;
+        left: 50%;
+        font-size: 4rem;
+    }
+
+    .countdown-container .countdown-globe {
+        padding-top: 6.5rem; 
+    }
+    .countdown-container .countdown-globe div {
+        font-size: 2.6rem;
+    }
+
+    #container .eid-mubarak-text {
+        top: 17rem;
+        font-size: 8rem;
+    }
+}
