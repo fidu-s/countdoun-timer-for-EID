@@ -28,7 +28,9 @@ body {
 
 #container.parallax-container {
     position: relative;
-    max-width: 2560px;
+    /* max-width: 2560px; */
+    /* width: 100vh; */
+    height: 100vh;
     margin: 0 auto;
     overflow: hidden;
     background: linear-gradient(120deg, rgba(160, 101, 177, 0.7), rgba(4, 131, 160, 0.7));
